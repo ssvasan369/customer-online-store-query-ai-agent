@@ -1,0 +1,13 @@
+{
+    "llm": {
+        "model_name": "mixtral-8x7b-32768",
+        "api_key_env": "GROQ_API_KEY"
+    },
+    "workflow": {
+        "entry_point": "categorize"
+    },
+    "ui": {
+        "page_title": "Professional Customer Support",
+        "page_icon": "🎧"
+    }
+}

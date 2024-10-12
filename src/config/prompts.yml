@@ -1,0 +1,129 @@
+categorize_query: |
+  Task: Categorize the following customer query into one of these categories: Technical, Billing, or General.
+
+  Instructions:
+  1. Read the query carefully.
+  2. Identify key words or phrases that indicate the nature of the query.
+  3. Choose the most appropriate category based on the content.
+  4. Respond with only the category name.
+
+  Examples:
+  - Query: "My internet connection is very slow."
+    Category: Technical
+  - Query: "I was charged twice on my last bill."
+    Category: Billing
+  - Query: "What are your business hours?"
+    Category: General
+
+  Customer Query: {query}
+
+  Category:
+
+analyze_sentiment: |
+  Task: Analyze the sentiment of the following customer query and provide a brief explanation.
+
+  Instructions:
+  1. Read the query carefully.
+  2. Assess the overall tone and emotional content of the query.
+  3. Categorize the sentiment as either Positive, Neutral, or Negative.
+  4. Provide a brief explanation (2-3 sentences) for your choice.
+  5. Format your response as "Sentiment: Explanation"
+
+  Examples:
+  - Query: "Your service is amazing! Thank you so much for your help."
+    Response: Positive: The customer expresses strong satisfaction and gratitude. The use of "amazing" and "thank you so much" indicates a very positive experience.
+
+  - Query: "I need to update my billing information."
+    Response: Neutral: The customer is making a straightforward request without expressing any particular emotion. The tone is matter-of-fact and doesn't lean towards positive or negative.
+
+  - Query: "This is the third time I've called about this issue. I'm extremely frustrated!"
+    Response: Negative: The customer explicitly states their frustration. The mention of repeated attempts to resolve an issue indicates a poor experience and dissatisfaction.
+
+  Customer Query: {query}
+
+  Analysis:
+
+handle_technical: |
+  Task: Provide a detailed and helpful technical support response to the following query.
+
+  Instructions:
+  1. Identify the specific technical issue from the query.
+  2. Offer a step-by-step solution or troubleshooting process.
+  3. Use clear, non-technical language where possible.
+  4. If applicable, mention potential causes of the issue.
+  5. Provide any relevant tips or best practices.
+  6. End with an offer for further assistance if needed.
+
+  Example:
+  Query: "My Wi-Fi keeps disconnecting every few minutes. How can I fix this?"
+  Response: 
+  "I understand how frustrating intermittent Wi-Fi issues can be. Let's try these steps to resolve your connection problem:
+
+  1. Restart your router: Unplug it for 30 seconds, then plug it back in.
+  2. Check for interference: Move your router away from other electronic devices.
+  3. Update router firmware: Log into your router's admin panel and check for updates.
+  4. Change Wi-Fi channel: In your router settings, try a different channel (1, 6, or 11 for 2.4GHz).
+  5. Check for overheating: Ensure your router has proper ventilation.
+
+  These issues can often be caused by outdated firmware, interference from other devices, or network congestion. If the problem persists after trying these steps, please let me know, and we can explore more advanced troubleshooting options."
+
+  Customer Query: {query}
+
+  Technical Support Response:
+
+handle_billing: |
+  Task: Provide a comprehensive and empathetic billing support response to the following query.
+
+  Instructions:
+  1. Address the specific billing concern mentioned in the query.
+  2. Explain any relevant policies or procedures clearly.
+  3. If applicable, guide the customer through any necessary steps to resolve their issue.
+  4. Offer to investigate further if the issue can't be immediately resolved.
+  5. Assure the customer of your commitment to resolving their concern.
+  6. Provide information on how to follow up if needed.
+
+  Example:
+  Query: "I think I've been overcharged on my last bill. Can you help me understand the charges?"
+  Response:
+  "I apologize for any confusion regarding your bill, and I'm here to help you understand the charges. Let's go through this together:
+
+  1. I'll review your account and the last bill in detail.
+  2. Could you please confirm the specific charges you're concerned about?
+  3. I'll explain each line item and clarify any unfamiliar terms or fees.
+  4. If we find any discrepancies, I'll initiate an immediate correction and adjust your account.
+  5. For future reference, you can always view a breakdown of charges in your online account portal.
+
+  Rest assured, if there's been an error, we'll make it right. If you have any documentation or previous bills you'd like me to compare, please let me know. Your satisfaction is our priority, and we appreciate your attention to your account details."
+
+  Customer Query: {query}
+
+  Billing Support Response:
+
+handle_general: |
+  Task: Provide a helpful and informative general support response to the following query.
+
+  Instructions:
+  1. Identify the main topic or concern in the query.
+  2. Provide clear and concise information addressing the query.
+  3. If relevant, offer additional helpful information or resources.
+  4. Maintain a friendly and approachable tone.
+  5. Invite the customer to ask any follow-up questions.
+
+  Example:
+  Query: "What are your store hours for the upcoming holiday weekend?"
+  Response:
+  "Thank you for your inquiry about our store hours for the upcoming holiday weekend. I'm happy to provide that information:
+
+  Our holiday weekend hours will be as follows:
+  - Friday: 9 AM - 9 PM (regular hours)
+  - Saturday: 10 AM - 8 PM
+  - Sunday: 11 AM - 6 PM
+  - Monday (Holiday): 10 AM - 5 PM
+
+  Please note that these hours may vary slightly by location. For the most accurate information for your specific store, I recommend checking our website or calling the store directly.
+
+  Additionally, our online store is always open if you prefer to shop from home. Do you need any information about our online services or current promotions for the holiday weekend?"
+
+  Customer Query: {query}
+
+  General Support Response:

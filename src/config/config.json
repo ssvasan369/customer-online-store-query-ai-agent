@@ -1,0 +1,8 @@
+{
+    "app_name": "Aniket Telcom Customer Support",
+    "app_about" : "Aniket Telcom Customer Support is dedicated to delivering exceptional service and assistance to our valued customers. We prioritize clear communication, prompt issue resolution, and a customer-first approach. Whether it's helping you understand your billing, resolving technical issues, or providing information about our services, our support team is here to ensure a smooth and satisfying experience.\n\nWith a focus on reliability and professionalism, we aim to address your queries and concerns swiftly, minimizing any disruption to your services. Our team of trained support agents is equipped with the knowledge and tools to provide accurate information and tailored solutions, ensuring you get the most out of your Aniket Telcom services.\n\nWe believe in building lasting relationships with our customers through transparent interactions and effective support, so you can always count on us to be there when you need assistance.",
+    "app_icon": "🎧",
+    "layout": "wide",
+    "default_response": "We apologize, but we couldn't process your request at this time.",
+    "escalation_message": "This query has been escalated to a human agent due to its negative sentiment."
+}
